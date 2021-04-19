@@ -1,0 +1,19 @@
+.service-list-container {
+    display: grid;
+    grid-template-columns: 50px auto 80px;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.411);
+}
+
+.delete-icon {
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-icon:active {
+    color: rgba(255, 0, 0, 0.507);
+    transform: scale(1.07);
+}

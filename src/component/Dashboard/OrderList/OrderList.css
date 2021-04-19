@@ -1,0 +1,33 @@
+.orderList-section-title {
+    text-align: center;
+    background-color: white;
+    width: 730px;
+    padding: 12px 24px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 110px 240px 160px 100px 130px;
+}
+
+.orderList-section-body {
+    text-align: center;
+    background-color: white;
+    width: 730px;
+    min-height: 500px;
+    margin: -20px auto;
+    padding: 10px 24px;
+    position: relative;
+}
+
+.spinner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.orderlist-container {
+    width: 100%;
+    background-color: white;
+    padding: 22px 0px;
+    display: grid;
+    grid-template-columns: 110px 240px 160px 100px 130px;
+}

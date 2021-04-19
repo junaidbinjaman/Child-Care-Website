@@ -1,0 +1,214 @@
+.heroarea-container {
+    width: 1200px;
+    height: 100%;
+    padding: 0px 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroarea-left {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeIn;
+    animation-duration: 2s;
+    z-index: 999;
+}
+
+.heroarea-left::after {
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    content: " ";
+    width: 150px;
+    height: 100px;
+    transform: rotate(-30deg);
+    background: #fff200a1;
+    border-radius: 100px / 70px;
+    z-index: -1;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.heroarea-left h1 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #48dafb83;
+}
+
+.heroarea-left p {
+    font-size: 18px;
+}
+
+.btn-global {
+    padding: 11px 39px;
+    background-image: linear-gradient(to right, #ff487f, #48dafb);
+    color: white;
+    border: none;
+    outline-width: 0;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-global:hover {
+    background-image: linear-gradient(to left, #ff487f, #48dafb);
+}
+
+.btn-global:active {
+    background-image: linear-gradient(to left, #ff487f75, #48dafb9f);
+    color: black;
+    transform: scale(1.09);
+}
+
+.heroarea-right img {
+    width: 520px;
+    height: 480px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.heroarea-right {
+    position: relative;
+}
+
+.heroarea-right::before {
+    content: " ";
+    position: absolute;
+    transform: rotate(-30deg);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f368e071;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: flip;
+    animation-duration: 3s;
+}
+
+.heroarea-right::after {
+    position: absolute;
+    top: 30%;
+    content: " ";
+    width: 65px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #48dafb83;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: zoomIn;
+    animation-duration: 5s;
+}
+
+.popup-content {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 0.5rem;
+    animation: zoomIn;
+    animation-duration: 0.3s;
+}
+
+.popup-contact-form {
+    padding: 3rem 0;
+    text-align: center;
+    color: #383838;
+    overflow: hidden;
+}
+
+.popup-contact-form input {
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #383838;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.popup-contact-form input:focus {
+    outline-width: 0;
+    border: 1px solid blue;
+}
+
+@media (max-width: 1030px) {
+    .heroarea-container {
+        width: 1024px;
+    }
+    .heroarea-left h1 {
+        font-size: 30px;
+        text-shadow: 1px 1px 1px #48dafb83;
+    }
+    .heroarea-left p {
+        font-size: 15px;
+    }
+    .heroarea-right img {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
+    .heroarea-right::after {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .heroarea-container {
+        width: fit-content;
+        display: block;
+        padding: 0px 0px;
+    }
+    .heroarea-left {
+        text-align: center;
+        margin: 20px 10px;
+    }
+    .heroarea-left::after {
+        position: absolute;
+        right: 35%;
+        bottom: 10%;
+        content: " ";
+        width: 150px;
+        height: 100px;
+        transform: rotate(-30deg);
+        background: #fff200a1;
+        border-radius: 100px / 70px;
+        z-index: -1;
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: bounce;
+        animation-duration: 2s;
+    }
+    .popup-content {
+        width: 85%;
+        min-height: 60%;
+        padding: 0 15px;
+    }
+    .popup-contact-form input {
+        width: fit-content;
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid #383838;
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+    .heroarea-left p {
+        width: 300px;
+    }
+    .heroarea-right img {
+        width: 300px;
+    }
+}

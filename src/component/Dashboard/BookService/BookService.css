@@ -1,0 +1,32 @@
+.dashboard-booking-form {
+    margin: 40px 70px;
+}
+
+.dashboard-booking-form input {
+    font-size: 17px;
+    padding: 11px 10px;
+    margin-top: 28px;
+    border: 1px solid lightgray;
+    outline-width: 0;
+}
+
+.dashboard-booking-form p {
+    color: #383833;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dashboard-booking-form input[type="submit"] {
+    padding: 11px 60px;
+    margin: 30px auto;
+}
+
+.billing-email-button {
+    border: none;
+    margin-top: 10px;
+    background-color: lightgray;
+    color: black;
+    padding: 4px 17px;
+    outline-width: 0;
+    cursor: pointer;
+}

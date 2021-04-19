@@ -1,0 +1,73 @@
+.testimonial-card {
+    margin: 30px;
+}
+
+.testimonial-content {
+    padding: 60px 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.103);
+    position: relative;
+    background-color: #5798fe;
+    z-index: 999;
+}
+
+.testimonial-content::before {
+    content: url("../../../../image/curve-shape-2.png");
+    position: absolute;
+    bottom: -53px;
+    left: 20%;
+}
+
+.testimonial-content::after {
+    content: url("../../../../image//testimonial-icon.png");
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 27%;
+    opacity: 0.08;
+    z-index: -1;
+}
+
+.testimonial-info {
+    width: 50%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonial-info p {
+    color: #383838;
+}
+
+.testimonial-info img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 420px) {
+    .testimonial-card {
+        width: 300px;
+    }
+    .testimonial-info {
+        width: 100%;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .testimonial-content::before {
+        bottom: -53px;
+        left: 5%;
+    }
+    .testimonial-content::after {
+        left: 10%;
+        top: 20%;
+    }
+    .testimonial-info {
+        margin: 50px 0;
+    }
+}

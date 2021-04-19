@@ -1,0 +1,33 @@
+.admin-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+}
+
+.user-name {
+    color: #383838;
+    cursor: pointer;
+}
+
+.admin-access li {
+    list-style: none;
+    padding-top: 6px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.admin-access {
+    padding: 7px 5px;
+}
+
+.admin-access li a {
+    color: #383838;
+    outline-width: 0;
+}
+
+[role="tooltip"].popup-content {
+    width: 160px !important;
+    text-align: left;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.116) 0px 0px 0px;
+}

@@ -1,0 +1,19 @@
+.dashboard-container {
+    display: flex;
+}
+
+.dashboard-sidebar {
+    flex: 1;
+    background-color: white;
+}
+
+.dashboard-content {
+    flex: 3;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    background-color: white;
+    height: 4em;
+}

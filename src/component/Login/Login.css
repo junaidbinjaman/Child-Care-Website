@@ -1,0 +1,63 @@
+.login-form-area {
+    width: 500px;
+    height: 570px;
+    text-align: center;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.137);
+    border-radius: 7px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form-area img {
+    margin: 30px 0;
+}
+
+.login-form-area input {
+    height: 30px;
+    font-size: 16px;
+    outline-width: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.login-form-area input[type="submit"] {
+    height: fit-content;
+    width: 76%;
+}
+
+.google-login {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.google-login {
+    text-align: center;
+}
+
+.google-login hr {
+    width: 40%;
+    margin: 10px auto;
+    height: 1px;
+    background-color: #ff4880;
+}
+
+.google-icon {
+    font-size: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.login-footer {
+    background-color: #393d72;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-footer::before {
+    content: url("../../image/footerBackground.png");
+    position: absolute;
+    opacity: 0.3;
+    height: 100%;
+}

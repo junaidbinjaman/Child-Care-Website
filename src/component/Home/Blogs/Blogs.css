@@ -1,0 +1,26 @@
+.blogs-container {
+    text-align: center;
+}
+
+.blogs-container h2 {
+    font-size: 35px;
+}
+
+.blogs-container hr {
+    width: 20%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #ff4880;
+}
+
+.blog-row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+}
+
+@media (max-width: 420px) {
+    .blog-row {
+        display: block;
+    }
+}

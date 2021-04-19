@@ -1,0 +1,27 @@
+.testimonial-container {
+    text-align: center;
+}
+
+.testimonial-container h2 {
+    font-size: 35px;
+}
+
+.testimonial-container hr {
+    width: 26%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #ff4880;
+}
+
+.testimonial-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 0;
+}
+
+@media (max-width: 420px) {
+    .testimonial-row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

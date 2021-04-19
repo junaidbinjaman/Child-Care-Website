@@ -1,0 +1,18 @@
+.service-section-title {
+    background-color: white;
+    width: 740px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 50px auto 80px;
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 17px;
+}
+
+.services-container {
+    background-color: white;
+    padding: 10px 20px;
+    width: 740px;
+    margin: -20px auto;
+    min-height: 540px;
+}
